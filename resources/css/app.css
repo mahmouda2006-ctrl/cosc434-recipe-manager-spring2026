@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
@@ -6,6 +6,103 @@
 @source '../**/*.js';
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-sans:
+        "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #222;
+    line-height: 1.5;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+nav {
+    margin-bottom: 16px;
+}
+
+h2,
+h3 {
+    margin: 16px 0 12px;
+}
+
+a {
+    color: #0b57d0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    margin: 12px 0;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #f0f0f0;
+}
+
+form {
+    background: #fff;
+    padding: 16px;
+    border: 1px solid #ddd;
+    max-width: 700px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #bbb;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 8px 12px;
+    border: 1px solid #888;
+    background: #eee;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ddd;
+}
+
+.alert {
+    padding: 10px;
+    border: 1px solid transparent;
+    margin: 12px 0;
+    border-radius: 4px;
+}
+
+.alert-success {
+    background: #eaf7ea;
+    border-color: #9bd29b;
+    color: #1f5f1f;
+}
+
+.alert-danger {
+    background: #fdeaea;
+    border-color: #e8aaaa;
+    color: #7a1f1f;
 }
